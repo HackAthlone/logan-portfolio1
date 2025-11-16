@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Logan – Digital Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Digital portfolio for Logan – showcasing projects, skills, and media for employers and postgraduate courses.">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body id="myPage">
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">
+    Close <i class="fa fa-remove"></i>
+  </a>
+  <a href="#about" class="w3-bar-item w3-button">About</a>
+  <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+  <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white" href="javascript:void(0);" onclick="openNav()">
+    <i class="fa fa-bars"></i>
+  </a>
+  <a href="#myPage" class="w3-bar-item w3-button w3-teal">
+    <i class="fa fa-user w3-margin-right"></i>Logan • Portfolio
+  </a>
+  <a href="#about" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
+  <a href="#projects" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Projects</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+
+  <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button">
+      More <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="#projects" class="w3-bar-item w3-button">Media & Code</a>
+      <a href="#contact" class="w3-bar-item w3-button">Download CV</a>
+    </div>
+  </div>
+
+  <span class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Accessibility">
+    <i class="fa fa-universal-access"></i>
+  </span>
+ </div>
+
+ <!-- Mobile Navbar -->
+ <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button">About</a>
+    <a href="#projects" class="w3-bar-item w3-button">Projects</a>
+    <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+ </div>
+</div>
+
+<!-- Hero -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Hero image" style="width:100%;min-height:350px;max-height:600px;">
+  
+  <div class="w3-display-middle w3-center">
+    <div class="w3-text-white w3-padding w3-round-large w3-theme-d3" style="max-width:90%;">
+      <h1 class="w3-xxlarge" style="text-shadow:1px 1px 4px #000;">Hi, I’m Logan.</h1>
+      <p class="w3-large">Aspiring digital professional creating a portfolio for employers and postgraduate pathways.</p>
+    </div>
+  </div>
+
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme">
+      Portfolio Overview
+    </button>
+  </div>
+</div>
+
+<!-- Overview Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>Portfolio Purpose & Plan</h4>
+      <h5>Logan • Semester 1, 2025</h5>
+    </header>
+
+    <div class="w3-container">
+      <h6><strong>Purpose & Target Audience</strong></h6>
+      <p>
+        This portfolio is built for <strong>employers</strong>, <strong>postgraduate coordinators</strong> 
+        and potential <strong>future clients</strong>.
+      </p>
+
+      <h6><strong>Platform / Technology</strong></h6>
+      <p>Developed with semantic HTML, CSS, and W3.CSS for a responsive, accessible design.</p>
+
+      <h6><strong>Content Plan</strong></h6>
+      <ul>
+        <li>About Me & Skills</li>
+        <li>Projects & Media</li>
+        <li>Contact & CV</li>
+      </ul>
+
+      <h6><strong>Design & Accessibility</strong></h6>
+      <p>High-contrast colours, proper alt text, responsive layout, keyboard-friendly navigation.</p>
+    </div>
+
+    <footer class="w3-container w3-teal">
+      <p>Scroll to explore the full portfolio.</p>
+    </footer>
+
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="w3-container w3-padding-64 w3-center" id="about">
+<h2>ABOUT ME & SKILLS</h2>
+<p class="w3-large">A quick overview of who I am and what I bring to the table.</p>
+
+<div class="w3-row"><br>
+
+<div class="w3-quarter">
+  <img src="https://www.w3schools.com/w3images/avatar2.png" alt="Logan avatar" style="width:45%" class="w3-circle w3-hover-opacity">
+  <h3>Logan</h3>
+  <p>
+    A student based in Ireland with interests in digital creativity, web tech, and user-focused design.
+  </p>
+</div>
+
+<div class="w3-quarter">
+  <i class="fa fa-code w3-text-teal" style="font-size:45px;"></i>
+  <h3>Technical Skills</h3>
+  <p>HTML, CSS, W3.CSS, basic JS, Git, responsive design.</p>
+</div>
+
+<div class="w3-quarter">
+  <i class="fa fa-users w3-text-teal" style="font-size:45px;"></i>
+  <h3>Professional Skills</h3>
+  <p>Communication, teamwork, time management, presentation skills.</p>
+</div>
+
+<div class="w3-quarter">
+  <i class="fa fa-lightbulb-o w3-text-teal" style="font-size:45px;"></i>
+  <h3>Interests</h3>
+  <p>Web design, UX/UI, digital media, educational tech.</p>
+</div>
+
+</div>
+</div>
+
+<!-- Projects -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="projects">
+
+<div class="w3-quarter">
+<h2>PROJECTS & MEDIA</h2>
+<p>Showcasing academic and personal work that highlights my digital skills.</p>
+<ul>
+  <li>Blackjack Game (GUI)</li>
+  <li>Coursework & presentations</li>
+  <li>Group digital projects</li>
+  <li>PDF deliverables and media</li>
+</ul>
+</div>
+
+<!-- PROJECT 1: BLACKJACK GAME -->
+<div class="w3-quarter">
+  <div class="w3-card w3-white">
+    <img src="Blackjack.png" alt="Blackjack game image" style="width:100%">
+    <div class="w3-container">
+      <h3>Project 1: Blackjack Game (GUI)</h3>
+      <p>
+        A graphical Blackjack game where the player competes against the dealer.
+        This project demonstrates game logic, basic GUI design and user interaction.
+      </p>
+
+      <p><strong>How it works:</strong></p>
+      <ul class="w3-ul">
+        <li>Player is dealt two random cards, dealer receives two (one hidden)</li>
+        <li>Player can <strong>hit</strong> for more cards or <strong>stand</strong> to lock in their score</li>
+        <li>Game calculates card values dynamically (Aces = 1 or 11)</li>
+        <li>Dealer auto-plays following Blackjack rules (must hit below 17)</li>
+        <li>Win/lose conditions shown in GUI with updated card graphics</li>
+      </ul>
+
+      <p><strong>Tech:</strong> Java / Python GUI (depending on your version)</p>
+
+      <p>
+        <a href="BlackJackGame(GUI).zip" download class="w3-button w3-teal w3-small">
+          <i class="fa fa-download"></i> Download game (ZIP)
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- PROJECT 2: ARDUINO MELTDOWN SIMULATOR -->
+<div class="w3-quarter">
+  <div class="w3-card w3-white">
+    <img src="arduino-logo-11563227354ny21akychx.png" alt="Arduino project placeholder image" style="width:100%">
+    <div class="w3-container">
+      <h3>Project 2: Arduino Nuclear Meltdown Simulator</h3>
+      <p>
+        An educational hardware project that <strong>simulates</strong> a nuclear reactor meltdown scenario using
+        Arduino, Raspberry Pi and cloud logging.  
+        It models sensor readings (e.g. temperature or “radiation” levels), triggers alarms, and visualises data online.
+      </p>
+
+      <p><strong>How it works:</strong></p>
+      <ul class="w3-ul">
+        <li>Arduino reads “reactor” sensor values in real time</li>
+        <li>Raspberry Pi collects and processes the incoming serial data</li>
+        <li>Critical thresholds trigger sirens, LEDs & warning indicators</li>
+        <li>Live data is pushed to <strong>ThingSpeak</strong> for IoT graphing</li>
+        <li>Dashboard displays temperature & alert status in the cloud</li>
+      </ul>
+
+      <p><strong>Tech:</strong> Arduino, Raspberry Pi, ThingSpeak, Python, embedded C</p>
+
+      <p>
+        <a href="Arduino Project.mp4" class="w3-button w3-teal w3-small">
+          <i class="fa fa-play"></i> Watch demo video (MP4)
+        </a>
+      </p>
+
+  
+    </div>
+  </div>
+</div>
+
+
+<!-- PROJECT 3: GARAGE BOOKING SERVICE -->
+<div class="w3-quarter">
+  <div class="w3-card w3-white">
+    <img src="Scaletech.png" alt="Garage booking service placeholder image" style="width:100%">
+    <div class="w3-container">
+      <h3>Project 3: Garage Booking Service</h3>
+      <p>
+        A web-based <strong>garage booking system</strong> that lets customers book service slots online and
+        stores all bookings in a database.  
+        The project combines a Java back-end with an HTML front-end and persistent data storage.
+      </p>
+
+      <p><strong>How it works:</strong></p>
+      <ul class="w3-ul">
+        <li>Customer selects date, time and service type via an HTML form</li>
+        <li>Java back-end receives and validates the booking request</li>
+        <li>Booking details are saved into a relational database</li>
+        <li>Garage staff can view scheduled bookings for each day</li>
+        <li>Designed to reduce double-bookings and manual admin work</li>
+      </ul>
+
+      <p><strong>Tech:</strong> Java, HTML/CSS, databases (SQL), basic web architecture</p>
+
+      <p>
+        <a href="Autoscale Project Demo 10th April.mp4" class="w3-button w3-teal w3-small">
+          <i class="fa fa-play"></i> Watch demo video
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Connect with Me</h4>
+  <a class="w3-button w3-large w3-teal" href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+  <a class="w3-button w3-large w3-teal" href="#" target="_blank"><i class="fa fa-github"></i></a>
+  <a class="w3-button w3-large w3-teal" href="mailto:your.email@example.com"><i class="fa fa-envelope"></i></a>
+
+  <p class="w3-margin-top">© 2025 Logan – Digital Portfolio</p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) x.className += " w3-show";
+  else x.className = x.className.replace(" w3-show", "");
+}
+</script>
+
+</body>
+</html>
